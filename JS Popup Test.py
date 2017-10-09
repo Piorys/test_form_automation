@@ -23,6 +23,7 @@ class PopUpTest(unittest.TestCase):
     # Step
         alert_1 = driver.switch_to_alert()
         alert_1.accept()
+
     def tearDown(self):
         self.driver.close()
 

@@ -1,6 +1,5 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 targetSite = "http://executeautomation.com/demosite/index.html"
 
@@ -53,6 +52,7 @@ class FormTest(unittest.TestCase):
 
     def tearDown(self):
         self.driver.close()
+
 
 if __name__ == "__main__":
     unittest.main()

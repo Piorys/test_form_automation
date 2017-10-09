@@ -1,6 +1,5 @@
 import unittest
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 targetSite = "http://executeautomation.com/demosite/index.html"
 
@@ -51,7 +50,7 @@ class FormTest(unittest.TestCase):
 
     # Step
         country_dropdown = driver.find_element_by_id("Country")
-        for option in tittle_dropdown.find_elements_by_tag_name("option"):
+        for option in country_dropdown.find_elements_by_tag_name("option"):
             if option == "Singapore":
                 option.click()
                 break
